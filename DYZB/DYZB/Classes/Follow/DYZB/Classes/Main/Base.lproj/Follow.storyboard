@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SXY-Mz-L91">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--关注-->
+        <scene sceneID="bhb-8N-uMi">
+            <objects>
+                <viewController id="SXY-Mz-L91" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wuh-F6-gdB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WKz-mv-z5k"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="关注" image="btn_follow_normal" selectedImage="btn_follow_selected" id="6WF-vS-2ZK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xKL-EA-jO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-106" y="624"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_follow_normal" width="30" height="24"/>
+        <image name="btn_follow_selected" width="30" height="24"/>
+    </resources>
+</document>

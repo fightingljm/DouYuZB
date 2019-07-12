@@ -6,9 +6,26 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--我的-->
+        <scene sceneID="zyV-5P-gq9">
+            <objects>
+                <viewController id="vXN-C3-a0w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g7K-ti-Njc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tm1-U2-01b"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的" image="btn_profile_normal" selectedImage="btn_profile_selected" id="jSa-zA-meg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t0H-X5-Gqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123" y="1274"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="LdX-o7-b6O">
             <objects>
@@ -22,7 +39,7 @@
                         <segue destination="qJN-7Y-tL8" kind="relationship" relationship="viewControllers" id="fU5-RR-RCK"/>
                         <segue destination="sQu-cM-xZd" kind="relationship" relationship="viewControllers" id="mFc-1I-r8H"/>
                         <segue destination="2GI-ue-Lk1" kind="relationship" relationship="viewControllers" id="z7y-Lx-7py"/>
-                        <segue destination="fqg-7A-iJb" kind="relationship" relationship="viewControllers" id="IS3-Zx-eUU"/>
+                        <segue destination="vXN-C3-a0w" kind="relationship" relationship="viewControllers" id="IS3-Zx-eUU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07n-kl-Gww" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -59,15 +76,9 @@
             </objects>
             <point key="canvasLocation" x="-106" y="624"/>
         </scene>
-        <!--Profile-->
-        <scene sceneID="YdK-rt-sUB">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="fqg-7A-iJb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="dcc-wl-I8P"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1aB-HX-IsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-123" y="1274"/>
-        </scene>
     </scenes>
+    <resources>
+        <image name="btn_profile_normal" width="24" height="24"/>
+        <image name="btn_profile_selected" width="24" height="24"/>
+    </resources>
 </document>
