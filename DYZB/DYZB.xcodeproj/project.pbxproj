@@ -82,6 +82,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAA56EB422D8354B001D57AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AAA56EA422D8267E001D57AE /* Home.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AAA56EB522D8354B001D57AE /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		AAA56EB622D8354B001D57AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AAA56EB722D835A5001D57AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AAA56EB822D835A5001D57AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AAB66F6522D72705008B67DD /* Main.storyboard */,
+				AAA56EB222D830D7001D57AE /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AAA56EB922D835A5001D57AE /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
 		AAB66F5522D72705008B67DD = {
 			isa = PBXGroup;
 			children = (
@@ -148,7 +193,9 @@
 		AAB66F9022D7360B008B67DD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				AAA56EA422D8267E001D57AE /* Home.storyboard */,
+				AAA56EB522D8354B001D57AE /* Modal */,
+				AAA56EB622D8354B001D57AE /* View */,
+				AAA56EB422D8354B001D57AE /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -187,8 +234,9 @@
 		AAB66F9522D7360B008B67DD /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				AAB66F6522D72705008B67DD /* Main.storyboard */,
-				AAA56EB222D830D7001D57AE /* MainViewController.swift */,
+				AAA56EB922D835A5001D57AE /* Modal */,
+				AAA56EB722D835A5001D57AE /* View */,
+				AAA56EB822D835A5001D57AE /* Controller */,
 			);
 			path = Main;
 			sourceTree = "<group>";
