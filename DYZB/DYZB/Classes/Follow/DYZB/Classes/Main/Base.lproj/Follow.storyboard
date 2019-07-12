@@ -1,26 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SXY-Mz-L91">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Hv-ZM-d3v">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--关注-->
+        <!--View Controller-->
         <scene sceneID="bhb-8N-uMi">
             <objects>
                 <viewController id="SXY-Mz-L91" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wuh-F6-gdB">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WKz-mv-z5k"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="关注" image="btn_follow_normal" selectedImage="btn_follow_selected" id="6WF-vS-2ZK"/>
+                    <navigationItem key="navigationItem" id="fNQ-6Q-Zvj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKL-EA-jO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-106" y="624"/>
+            <point key="canvasLocation" x="802.89855072463774" y="623.4375"/>
+        </scene>
+        <!--关注-->
+        <scene sceneID="Ldd-cG-B9c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Hv-ZM-d3v" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="关注" image="btn_follow_normal" selectedImage="btn_follow_selected" id="6WF-vS-2ZK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bms-S6-XuO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SXY-Mz-L91" kind="relationship" relationship="rootViewController" id="5RA-Ca-t3S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xrm-NX-Qjo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107.24637681159422" y="623.4375"/>
         </scene>
     </scenes>
     <resources>
