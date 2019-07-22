@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
         return titleView
     }()
     
-    private lazy var pageContentView: PageContentView = {
+    private lazy var pageContentView: PageContentView = {[weak self] in
         // 1.确定内容的frame
         let contentH = kScreenH-kStatusBarH-kNavigationBarH-kTitleViewH
         let contentFrame = CGRect(x: 0, y: kStatusBarH+kNavigationBarH+kTitleViewH, width: kScreenW, height: contentH)
