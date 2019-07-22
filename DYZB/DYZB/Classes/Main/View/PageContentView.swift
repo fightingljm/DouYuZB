@@ -132,7 +132,7 @@ extension PageContentView:UICollectionViewDelegate{
             // 2. 计算targetIndex
             targetIndex = Int(currentOffsetX/scrollViewW)
             // 3. 计算sourceIndex
-            sourceIndex = sourceIndex+1
+            sourceIndex = targetIndex+1
             if sourceIndex>=childVcs.count{
                 sourceIndex = childVcs.count-1
             }
