@@ -52,7 +52,7 @@ class PageContentView: UIView {
     
 }
 
-//MARK:- 设置UI界面
+// MARK:- 设置UI界面
 extension PageContentView{
     private func setupUI(){
         // 1.将所有的子控制器添加到父控制其中
@@ -65,7 +65,7 @@ extension PageContentView{
     }
 }
 
-//MARK:- 遵守UICollectionViewDataSource
+// MARK:- 遵守UICollectionViewDataSource
 extension PageContentView:UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return childVcs.count
@@ -87,4 +87,12 @@ extension PageContentView:UICollectionViewDataSource{
     }
     
     
+}
+
+// MARK:- 对外暴露的方法
+extension PageContentView{
+    func setCurrentIndex(currentIndex:Int) {
+        let offsetX = CGFloat(currentIndex)*collectionView.frame.width
+        collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: false)
+    }
 }
