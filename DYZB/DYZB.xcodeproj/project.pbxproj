@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA057CCC22E6988600E40F20 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057CCA22E6988600E40F20 /* CollectionHeaderView.swift */; };
+		AA057CCD22E6988600E40F20 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA057CCB22E6988600E40F20 /* CollectionHeaderView.xib */; };
+		AA057CD022E6A87200E40F20 /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057CCE22E6A87200E40F20 /* CollectionNormalCell.swift */; };
+		AA057CD122E6A87200E40F20 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA057CCF22E6A87200E40F20 /* CollectionNormalCell.xib */; };
 		AA0EB39F22E19AA4005EF3D0 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */; };
 		AA0EB3A122E19E0D005EF3D0 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */; };
 		AA0EB3C722E5B513005EF3D0 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */; };
@@ -45,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA057CCA22E6988600E40F20 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		AA057CCB22E6988600E40F20 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		AA057CCE22E6A87200E40F20 /* CollectionNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
+		AA057CCF22E6A87200E40F20 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
 		AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +124,8 @@
 		AAA56EB622D8354B001D57AE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA057CCA22E6988600E40F20 /* CollectionHeaderView.swift */,
+				AA057CCB22E6988600E40F20 /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,6 +135,8 @@
 			children = (
 				AA33303822D8786B009FC832 /* PageTitleView.swift */,
 				AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */,
+				AA057CCE22E6A87200E40F20 /* CollectionNormalCell.swift */,
+				AA057CCF22E6A87200E40F20 /* CollectionNormalCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -375,6 +387,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAB66F6C22D72706008B67DD /* LaunchScreen.storyboard in Resources */,
+				AA057CCD22E6988600E40F20 /* CollectionHeaderView.xib in Resources */,
+				AA057CD122E6A87200E40F20 /* CollectionNormalCell.xib in Resources */,
 				AAB66F6922D72706008B67DD /* Assets.xcassets in Resources */,
 				AAB66F6722D72705008B67DD /* Main.storyboard in Resources */,
 				AAA56EA922D826B6001D57AE /* Live.storyboard in Resources */,
@@ -406,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAB66F6222D72705008B67DD /* AppDelegate.swift in Sources */,
+				AA057CCC22E6988600E40F20 /* CollectionHeaderView.swift in Sources */,
 				AA0EB3A122E19E0D005EF3D0 /* UIColor-Extension.swift in Sources */,
 				AA0EB3C722E5B513005EF3D0 /* RecommendViewController.swift in Sources */,
 				AA33303B22D87D09009FC832 /* Common.swift in Sources */,
@@ -413,6 +428,7 @@
 				AA0EB39F22E19AA4005EF3D0 /* PageContentView.swift in Sources */,
 				AA33303922D8786B009FC832 /* PageTitleView.swift in Sources */,
 				AAA56EC022D855BB001D57AE /* UIBarButtonItem-Extension.swift in Sources */,
+				AA057CD022E6A87200E40F20 /* CollectionNormalCell.swift in Sources */,
 				AAA56EBB22D836D0001D57AE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
