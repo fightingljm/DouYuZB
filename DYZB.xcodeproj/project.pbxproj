@@ -21,6 +21,7 @@
 		AA057D8122E7E41800E40F20 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057D8022E7E41800E40F20 /* NSDate-Extension.swift */; };
 		AA057D8422E7F8EE00E40F20 /* AnthorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057D8322E7F8EE00E40F20 /* AnthorGroup.swift */; };
 		AA057D8622E7FC2F00E40F20 /* AnthorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057D8522E7FC2F00E40F20 /* AnthorModel.swift */; };
+		AA057D8822E8407000E40F20 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057D8722E8407000E40F20 /* CollectionBaseCell.swift */; };
 		AA0EB39F22E19AA4005EF3D0 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */; };
 		AA0EB3A122E19E0D005EF3D0 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */; };
 		AA0EB3C722E5B513005EF3D0 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */; };
@@ -76,6 +77,7 @@
 		AA057D8022E7E41800E40F20 /* NSDate-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
 		AA057D8322E7F8EE00E40F20 /* AnthorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnthorGroup.swift; sourceTree = "<group>"; };
 		AA057D8522E7FC2F00E40F20 /* AnthorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnthorModel.swift; sourceTree = "<group>"; };
+		AA057D8722E8407000E40F20 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				AA057CCF22E6A87200E40F20 /* CollectionNormalCell.xib */,
 				AA057CD222E6B55800E40F20 /* CollectionPrettyCell.swift */,
 				AA057CD322E6B55800E40F20 /* CollectionPrettyCell.xib */,
+				AA057D8722E8407000E40F20 /* CollectionBaseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -543,12 +546,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DYZB/Pods-DYZB-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -596,6 +601,7 @@
 				AA33303922D8786B009FC832 /* PageTitleView.swift in Sources */,
 				AAA56EC022D855BB001D57AE /* UIBarButtonItem-Extension.swift in Sources */,
 				AA057CD422E6B55800E40F20 /* CollectionPrettyCell.swift in Sources */,
+				AA057D8822E8407000E40F20 /* CollectionBaseCell.swift in Sources */,
 				AA057D8122E7E41800E40F20 /* NSDate-Extension.swift in Sources */,
 				AA057CD022E6A87200E40F20 /* CollectionNormalCell.swift in Sources */,
 				AA057D7B22E70E8200E40F20 /* NetworkTools.swift in Sources */,

@@ -6,6 +6,7 @@ use_frameworks!
 target 'DYZB' do
 
   pod 'Alamofire'
+  pod 'Kingfisher'
 
   target 'DYZBTests' do
     inherit! :search_paths

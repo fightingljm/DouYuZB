@@ -46,7 +46,6 @@ extension RecommendViewModel{
             }
             // 离开组
             dGroup.leave()
-            print("数据请求到1")
         }
         // 2.请求颜值数据
         dGroup.enter()
@@ -68,7 +67,6 @@ extension RecommendViewModel{
             }
             // 离开组
             dGroup.leave()
-            print("数据请求到2")
         }
         // 3.请求游戏数据
         dGroup.enter()
@@ -84,11 +82,10 @@ extension RecommendViewModel{
             }
             // 离开组
             dGroup.leave()
-            print("数据请求到3")
         }
         
         // 所有的数据都请求到之后进行排序
-        dGroup.notify(queue: .main) {
+        dGroup.notify(queue: DispatchQueue.main) {
             self.anchorGroups.insert(self.prettyData, at: 0)
             self.anchorGroups.insert(self.bigData, at: 0)
             finishCallback()
