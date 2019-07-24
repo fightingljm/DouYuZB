@@ -22,6 +22,8 @@ class AnthorModel: NSObject {
     var nickname:String = ""
     // 观看人数
     var online:Int = 0
+    // 所在城市
+    var anchor_city:String = ""
     
     init(dict:[String:NSObject]) {
         super.init()
