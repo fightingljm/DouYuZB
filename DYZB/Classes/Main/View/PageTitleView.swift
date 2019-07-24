@@ -122,6 +122,8 @@ extension PageTitleView{
     @objc private func titleLabelClick(tapGes:UITapGestureRecognizer){
         // 1.获取当前的Label
         guard let currentLabel = tapGes.view as? UILabel else { return }
+        // fix: 重复点击同一个Title
+        if currentLabel.tag==currentIndex { return }
         // 2.获取之前的Label
         let oldLabel = titleLabels[currentIndex]
         // 3.切换文字的颜色
