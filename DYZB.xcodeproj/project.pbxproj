@@ -17,6 +17,7 @@
 		AA057CD422E6B55800E40F20 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057CD222E6B55800E40F20 /* CollectionPrettyCell.swift */; };
 		AA057CD522E6B55800E40F20 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA057CD322E6B55800E40F20 /* CollectionPrettyCell.xib */; };
 		AA057D7B22E70E8200E40F20 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057D7A22E70E8200E40F20 /* NetworkTools.swift */; };
+		AA057D7F22E7E0BA00E40F20 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057D7E22E7E0BA00E40F20 /* RecommendViewModel.swift */; };
 		AA0EB39F22E19AA4005EF3D0 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */; };
 		AA0EB3A122E19E0D005EF3D0 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */; };
 		AA0EB3C722E5B513005EF3D0 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */; };
@@ -68,6 +69,7 @@
 		AA057CD222E6B55800E40F20 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		AA057CD322E6B55800E40F20 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		AA057D7A22E70E8200E40F20 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		AA057D7E22E7E0BA00E40F20 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AA057D7C22E7E08200E40F20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA057D7D22E7E08200E40F20 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AA057D7E22E7E0BA00E40F20 /* RecommendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		AAA56EB422D8354B001D57AE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,13 +173,6 @@
 				AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		AAA56EB522D8354B001D57AE /* Modal */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Modal;
 			sourceTree = "<group>";
 		};
 		AAA56EB622D8354B001D57AE /* View */ = {
@@ -280,7 +290,8 @@
 		AAB66F9022D7360B008B67DD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				AAA56EB522D8354B001D57AE /* Modal */,
+				AA057D7C22E7E08200E40F20 /* Model */,
+				AA057D7D22E7E08200E40F20 /* ViewModel */,
 				AAA56EB622D8354B001D57AE /* View */,
 				AAA56EB422D8354B001D57AE /* Controller */,
 			);
@@ -577,6 +588,7 @@
 				AA057CD022E6A87200E40F20 /* CollectionNormalCell.swift in Sources */,
 				AA057D7B22E70E8200E40F20 /* NetworkTools.swift in Sources */,
 				AAA56EBB22D836D0001D57AE /* HomeViewController.swift in Sources */,
+				AA057D7F22E7E0BA00E40F20 /* RecommendViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

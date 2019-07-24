@@ -20,6 +20,7 @@ private let kHeaderViewID = "kHeaderViewID"
 class RecommendViewController: UIViewController {
     
     // MARK:- 懒加载属性
+    private lazy var RecommendVM: RecommendViewModel = RecommendViewModel()
     private lazy var collectionView:UICollectionView = {[unowned self] in
         // 1.创建布局
         let layout = UICollectionViewFlowLayout()
@@ -66,9 +67,7 @@ extension RecommendViewController{
 // MARK:- 请求数据
 extension RecommendViewController{
     private func loadData(){
-        NetworkTools.requestData(type: .GET, URLString: "http://httpbin.org/get", parameters: ["String" : "NSString"]) { (result) in
-            print(result)
-        }
+        RecommendVM.requestData()
     }
 }
 
