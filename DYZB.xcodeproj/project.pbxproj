@@ -18,6 +18,9 @@
 		AA057CD522E6B55800E40F20 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA057CD322E6B55800E40F20 /* CollectionPrettyCell.xib */; };
 		AA057D7B22E70E8200E40F20 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057D7A22E70E8200E40F20 /* NetworkTools.swift */; };
 		AA057D7F22E7E0BA00E40F20 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057D7E22E7E0BA00E40F20 /* RecommendViewModel.swift */; };
+		AA057D8122E7E41800E40F20 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057D8022E7E41800E40F20 /* NSDate-Extension.swift */; };
+		AA057D8422E7F8EE00E40F20 /* AnthorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057D8322E7F8EE00E40F20 /* AnthorGroup.swift */; };
+		AA057D8622E7FC2F00E40F20 /* AnthorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057D8522E7FC2F00E40F20 /* AnthorModel.swift */; };
 		AA0EB39F22E19AA4005EF3D0 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */; };
 		AA0EB3A122E19E0D005EF3D0 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */; };
 		AA0EB3C722E5B513005EF3D0 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */; };
@@ -70,6 +73,9 @@
 		AA057CD322E6B55800E40F20 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		AA057D7A22E70E8200E40F20 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		AA057D7E22E7E0BA00E40F20 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		AA057D8022E7E41800E40F20 /* NSDate-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		AA057D8322E7F8EE00E40F20 /* AnthorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnthorGroup.swift; sourceTree = "<group>"; };
+		AA057D8522E7FC2F00E40F20 /* AnthorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnthorModel.swift; sourceTree = "<group>"; };
 		AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +171,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		AA057D8222E7F8C200E40F20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA057D8322E7F8EE00E40F20 /* AnthorGroup.swift */,
+				AA057D8522E7FC2F00E40F20 /* AnthorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AAA56EB422D8354B001D57AE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,18 +221,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		AAA56EB922D835A5001D57AE /* Modal */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Modal;
-			sourceTree = "<group>";
-		};
 		AAA56EBC22D8557D001D57AE /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				AAA56EBF22D855BB001D57AE /* UIBarButtonItem-Extension.swift */,
 				AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */,
+				AA057D8022E7E41800E40F20 /* NSDate-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -335,7 +344,7 @@
 		AAB66F9522D7360B008B67DD /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				AAA56EB922D835A5001D57AE /* Modal */,
+				AA057D8222E7F8C200E40F20 /* Model */,
 				AAA56EB722D835A5001D57AE /* View */,
 				AAA56EB822D835A5001D57AE /* Controller */,
 			);
@@ -580,11 +589,14 @@
 				AA0EB3A122E19E0D005EF3D0 /* UIColor-Extension.swift in Sources */,
 				AA0EB3C722E5B513005EF3D0 /* RecommendViewController.swift in Sources */,
 				AA33303B22D87D09009FC832 /* Common.swift in Sources */,
+				AA057D8422E7F8EE00E40F20 /* AnthorGroup.swift in Sources */,
 				AAA56EB322D830D7001D57AE /* MainViewController.swift in Sources */,
 				AA0EB39F22E19AA4005EF3D0 /* PageContentView.swift in Sources */,
+				AA057D8622E7FC2F00E40F20 /* AnthorModel.swift in Sources */,
 				AA33303922D8786B009FC832 /* PageTitleView.swift in Sources */,
 				AAA56EC022D855BB001D57AE /* UIBarButtonItem-Extension.swift in Sources */,
 				AA057CD422E6B55800E40F20 /* CollectionPrettyCell.swift in Sources */,
+				AA057D8122E7E41800E40F20 /* NSDate-Extension.swift in Sources */,
 				AA057CD022E6A87200E40F20 /* CollectionNormalCell.swift in Sources */,
 				AA057D7B22E70E8200E40F20 /* NetworkTools.swift in Sources */,
 				AAA56EBB22D836D0001D57AE /* HomeViewController.swift in Sources */,
