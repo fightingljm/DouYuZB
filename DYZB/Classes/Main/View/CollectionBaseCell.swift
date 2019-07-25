@@ -32,8 +32,8 @@ class CollectionBaseCell: UICollectionViewCell {
             // 2.昵称的显示
             nicknameLabel.text = anchor.nickname
             // 3.设置封面图片
-            guard let iconURL = NSURL(string: anchor.room_src) else { return }
-            iconImageView.kf.setImage(with: iconURL as? Resource)
+            guard let iconURL = URL(string: anchor.room_src) else { return }
+            iconImageView.kf.setImage(with: iconURL)
         }
     }
 }
