@@ -11,6 +11,7 @@ import UIKit
 class RecommendViewModel {
     // MARK:- 懒加载属性
     lazy var anchorGroups:[AnthorGroup] = [AnthorGroup]()
+    lazy var cycleModels:[CycleModel] = [CycleModel]()
     private lazy var bigData:AnthorGroup = AnthorGroup()
     private lazy var prettyData:AnthorGroup = AnthorGroup()
 }
@@ -21,6 +22,7 @@ class RecommendViewModel {
 
 // MARK:- 发送网络请求
 extension RecommendViewModel{
+    // 请求推荐数据
     func requestData(finishCallback:@escaping ()->()){
         // 定义参数
         let parameters:[String : NSString] = ["limit" : "4","offset": "0"]
@@ -88,6 +90,19 @@ extension RecommendViewModel{
         dGroup.notify(queue: DispatchQueue.main) {
             self.anchorGroups.insert(self.prettyData, at: 0)
             self.anchorGroups.insert(self.bigData, at: 0)
+            finishCallback()
+        }
+    }
+    // 请求无限轮播的数据
+    func requestCycleData(finishCallback:@escaping ()->()) {
+        NetworkTools.requestData(type: .GET, URLString: "http://open.douyucdn.cn/api/RoomApi/game") { (result) in
+            // 1.将result转成字典类型
+            guard let resultDic = result as? [String:NSObject] else { return }
+            // 2.根据data该key,获取数组
+            guard let dataArray = resultDic["data"] as? [[String:NSObject]] else { return }
+            for dict in dataArray{
+                self.cycleModels.append(CycleModel(dict: dict))
+            }
             finishCallback()
         }
     }
