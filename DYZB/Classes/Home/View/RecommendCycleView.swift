@@ -33,7 +33,7 @@ class RecommendCycleView: UIView {
         // 设置该控件不随着父控件的拉伸而拉伸
         autoresizingMask = UIView.AutoresizingMask()
         // 注册Cell
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: kCycleCellID)
+        collectionView.register(UINib(nibName: "CollectionCycleCell", bundle: nil), forCellWithReuseIdentifier: kCycleCellID)
     }
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -57,11 +57,20 @@ extension RecommendCycleView:UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kCycleCellID, for: indexPath)
-        let cycleModel = cycleModels![indexPath.item]
-        cell.backgroundColor = indexPath.item%2==0 ? UIColor.gray : UIColor.yellow
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kCycleCellID, for: indexPath) as! CollectionCycleCell
+        cell.cycleModel = cycleModels![indexPath.item]
+        
         return cell
     }
     
-    
+}
+
+// MARK:- 遵守UICollectionView的代理协议
+extension RecommendCycleView:UICollectionViewDelegate{
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        // 1.获取滚动的偏移量
+        let offsetX = scrollView.contentOffset.x + scrollView.bounds.width*0.5
+        // 2.计算pageControl的currentIndex
+        pageControl.currentPage = Int(offsetX/scrollView.bounds.width)
+    }
 }

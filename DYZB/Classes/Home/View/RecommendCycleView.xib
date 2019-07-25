@@ -26,10 +26,11 @@
                     </collectionViewFlowLayout>
                     <connections>
                         <outlet property="dataSource" destination="iN0-l3-epB" id="7d5-Bn-M3W"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="I9D-Ld-K36"/>
                     </connections>
                 </collectionView>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="TY2-5J-Hfi">
-                    <rect key="frame" x="326" y="113" width="39" height="37"/>
+                    <rect key="frame" x="326" y="116" width="39" height="37"/>
                     <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="currentPageIndicatorTintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </pageControl>
@@ -37,7 +38,7 @@
             <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="TY2-5J-Hfi" secondAttribute="trailing" constant="10" id="7hU-vU-WOh"/>
-                <constraint firstAttribute="bottom" secondItem="TY2-5J-Hfi" secondAttribute="bottom" id="NQ7-Wy-XA4"/>
+                <constraint firstAttribute="bottom" secondItem="TY2-5J-Hfi" secondAttribute="bottom" constant="-3" id="NQ7-Wy-XA4"/>
                 <constraint firstItem="DcA-vA-RBM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PHE-aN-D2e"/>
                 <constraint firstItem="DcA-vA-RBM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uTq-gO-vQ6"/>
                 <constraint firstAttribute="bottom" secondItem="DcA-vA-RBM" secondAttribute="bottom" id="yDt-L8-pPX"/>

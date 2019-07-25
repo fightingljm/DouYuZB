@@ -11,9 +11,9 @@ import UIKit
 
 class CycleModel: NSObject {
     // 标题
-    var game_name:String = ""
+    var room_name:String = ""
     // 展示的图片地址
-    var game_src:String = ""
+    var room_src:String = ""
     // 主播信息对应的字典
     var room:[String:NSObject]?{
         didSet{
