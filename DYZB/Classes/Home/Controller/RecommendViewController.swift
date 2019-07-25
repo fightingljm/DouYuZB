@@ -14,6 +14,7 @@ private let kNormalItemH = kItemW*3/4
 private let kPrettyItemH = kItemW*4/3
 private let kHeaderViewH:CGFloat = 50
 private let kCycleViewH = kScreenW*3/8
+private let kGameViewH: CGFloat = 90
 
 private let kNormalCellID = "kNormalCellID"
 private let kPrettyCellID = "kPrettyCellID"
@@ -22,7 +23,7 @@ private let kHeaderViewID = "kHeaderViewID"
 class RecommendViewController: UIViewController {
     
     // MARK:- 懒加载属性
-    private lazy var RecommendVM: RecommendViewModel = RecommendViewModel()
+    private lazy var recommendVM: RecommendViewModel = RecommendViewModel()
     private lazy var collectionView:UICollectionView = {[unowned self] in
         // 1.创建布局
         let layout = UICollectionViewFlowLayout()
@@ -46,8 +47,13 @@ class RecommendViewController: UIViewController {
     }()
     private lazy var cycleView: RecommendCycleView = {
         let cycleView = RecommendCycleView.recommendCycleView()
-        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH+kGameViewH), width: kScreenW, height: kCycleViewH)
         return cycleView
+    }()
+    private lazy var gameView: RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return gameView
     }()
     
     // MARK:- 系统回调函数
@@ -70,8 +76,10 @@ extension RecommendViewController{
         view.addSubview(collectionView)
         // 2.将cycleView添加到UICollectionView中
         collectionView.addSubview(cycleView)
-        // 3.设置collectionView的内边距
-        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
+        // 3.将gameView添加到UICollectionView中
+        collectionView.addSubview(gameView)
+        // 4.设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH+kGameViewH, left: 0, bottom: 0, right: 0)
     }
 }
 
@@ -79,12 +87,12 @@ extension RecommendViewController{
 extension RecommendViewController{
     private func loadData(){
         // 请求推荐数据
-        RecommendVM.requestData {
+        recommendVM.requestData {
             self.collectionView.reloadData()
         }
         // 请求轮播数据
-        RecommendVM.requestCycleData {
-            self.cycleView.cycleModels = self.RecommendVM.cycleModels
+        recommendVM.requestCycleData {
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
         }
     }
 }
@@ -92,17 +100,17 @@ extension RecommendViewController{
 // MARK:- 遵守UICollectionView的数据源协议
 extension RecommendViewController:UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return RecommendVM.anchorGroups.count
+        return recommendVM.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let group = RecommendVM.anchorGroups[section]
+        let group = recommendVM.anchorGroups[section]
         return group.anchors.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // 1.取出模型对象
-        let group = RecommendVM.anchorGroups[indexPath.section]
+        let group = recommendVM.anchorGroups[indexPath.section]
         let anchor = group.anchors[indexPath.item]
         // 2.定义Cell
         var cell:CollectionBaseCell!
@@ -121,7 +129,7 @@ extension RecommendViewController:UICollectionViewDataSource,UICollectionViewDel
         // 1.取出setion的HeaderView
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
         // 2.取出模型
-        headerView.group = RecommendVM.anchorGroups[indexPath.section]
+        headerView.group = recommendVM.anchorGroups[indexPath.section]
         return headerView
     }
     
