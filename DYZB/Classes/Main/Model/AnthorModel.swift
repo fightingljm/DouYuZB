@@ -23,7 +23,7 @@ class AnthorModel: NSObject {
     // 观看人数
     @objc var online:Int = 0
     // 所在城市
-    @objc var anchor_city:String = ""
+    @objc var anchor_city:String = "天津市"
     
     init(dict:[String:Any]) {
         super.init()

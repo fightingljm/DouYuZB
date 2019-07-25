@@ -22,6 +22,10 @@ class AnthorGroup: NSObject {
     @objc var tag_name:String = ""
     // 组显示的图标
     @objc var icon_name:String = "home_header_normal"
+    // 组显示的标题
+    @objc var game_name:String = ""
+    // 组显示的图标
+    @objc var game_icon:String = "home_header_normal"
     // 定义主播的模型对象数组
     lazy var anchors:[AnthorModel] = [AnthorModel]()
     
@@ -35,6 +39,6 @@ class AnthorGroup: NSObject {
         setValuesForKeys(dict)
     }
     override func setValue(_ value: Any?, forUndefinedKey key: String) {
-        
+//        print("AnthorGroup-forUndefinedKey",key)
     }
 }

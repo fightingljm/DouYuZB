@@ -30,7 +30,7 @@ extension RecommendViewModel{
         let dGroup = DispatchGroup()
         // 1.请求推荐数据
         dGroup.enter()
-        NetworkTools.requestData(type: .GET, URLString: "http://open.douyucdn.cn/api/RoomApi/live", parameters: parameters) { (result) in
+        NetworkTools.requestData(type: .GET, URLString: "http://open.douyucdn.cn/api/RoomApi/live/4", parameters: ["limit" : "8","offset": "0"]) { (result) in
             // 1.将result转成字典类型
             guard let resultDic = result as? [String:NSObject] else { return }
             // 2.根据data该key,获取数组
@@ -39,8 +39,8 @@ extension RecommendViewModel{
             // 3.1 创建组
             // let group = AnthorGroup()
             // 3.2 设置组的属性
-            self.bigData.tag_name = "热门"
-            self.bigData.icon_name = "home_header_hot"
+            self.bigData.game_name = "热门"
+            self.bigData.game_icon = "home_header_hot"
             // 3.3 获取主播数据
             for dict in dataArray{
                 let anchor = AnthorModel(dict: dict)
@@ -51,7 +51,7 @@ extension RecommendViewModel{
         }
         // 2.请求颜值数据
         dGroup.enter()
-        NetworkTools.requestData(type: .GET, URLString: "http://open.douyucdn.cn/api/RoomApi/live", parameters: parameters) { (result) in
+        NetworkTools.requestData(type: .GET, URLString: "http://open.douyucdn.cn/api/RoomApi/live/2", parameters: parameters) { (result) in
             // 1.将result转成字典类型
             guard let resultDic = result as? [String:NSObject] else { return }
             // 2.根据data该key,获取数组
@@ -60,8 +60,8 @@ extension RecommendViewModel{
             // 3.1 创建组
             // let group = AnthorGroup()
             // 3.2 设置组的属性
-            self.prettyData.tag_name = "颜值"
-            self.prettyData.icon_name = "home_header_phone"
+            self.prettyData.game_name = "颜值"
+            self.prettyData.game_icon = "home_header_phone"
             // 3.3 获取主播数据
             for dict in dataArray{
                 let anchor = AnthorModel(dict: dict)
@@ -72,7 +72,7 @@ extension RecommendViewModel{
         }
         // 3.请求游戏数据
         dGroup.enter()
-        NetworkTools.requestData(type: .GET, URLString: "http://open.douyucdn.cn/api/RoomApi/live", parameters: parameters) { (result) in
+        NetworkTools.requestData(type: .GET, URLString: "http://open.douyucdn.cn/api/RoomApi/game", parameters: parameters) { (result) in
             // 1.将result转成字典类型
             guard let resultDic = result as? [String:NSObject] else { return }
             // 2.根据data该key,获取数组
@@ -95,7 +95,7 @@ extension RecommendViewModel{
     }
     // 请求无限轮播的数据
     func requestCycleData(finishCallback:@escaping ()->()) {
-        NetworkTools.requestData(type: .GET, URLString: "http://open.douyucdn.cn/api/RoomApi/live/1",parameters: ["limit":"4"]) { (result) in
+        NetworkTools.requestData(type: .GET, URLString: "http://open.douyucdn.cn/api/RoomApi/live/5",parameters: ["limit":"4"]) { (result) in
             // 1.将result转成字典类型
             guard let resultDic = result as? [String:NSObject] else { return }
             // 2.根据data该key,获取数组

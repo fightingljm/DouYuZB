@@ -1,19 +1,17 @@
 //
-//  CollectionHeaderView.swift
+//  CollectionGameCell.swift
 //  DYZB
 //
-//  Created by 刘金萌 on 2019/7/23.
+//  Created by 刘金萌 on 2019/7/25.
 //  Copyright © 2019 刘金萌. All rights reserved.
 //
 
 import UIKit
 import Kingfisher
 
-class CollectionHeaderView: UICollectionReusableView {
-    
+class CollectionGameCell: UICollectionViewCell {
     
     // MARK:- 控件属性
-    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var iconImageView: UIImageView!
     
@@ -22,9 +20,8 @@ class CollectionHeaderView: UICollectionReusableView {
         didSet{
             titleLabel.text = group?.game_name
             guard let iconURL = URL(string: group?.game_icon ?? "home_header_normal") else { return }
-            iconImageView.kf.setImage(with: iconURL)
-//            iconImageView.image = UIImage(named: group?.game_icon ?? "home_header_normal")
+            iconImageView.kf.setImage(with: iconURL,placeholder: UIImage(named: "home_more_btn"))
         }
     }
-    
+
 }

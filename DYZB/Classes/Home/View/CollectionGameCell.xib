@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="DYZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刘小鱼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-OR-xP2">
+                        <rect key="frame" x="21.5" y="65" width="37" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="txy-yW-4it"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ydC-iR-t4i">
+                        <rect key="frame" x="18" y="15" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ydC-iR-t4i" secondAttribute="height" multiplier="44:45" id="dTo-ol-jaB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="22.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VmA-OR-xP2" secondAttribute="bottom" constant="10" id="7h0-Je-Ry5"/>
+                <constraint firstItem="VmA-OR-xP2" firstAttribute="top" secondItem="ydC-iR-t4i" secondAttribute="bottom" constant="5" id="9ss-w0-ths"/>
+                <constraint firstItem="ydC-iR-t4i" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ERE-dB-q8X"/>
+                <constraint firstItem="VmA-OR-xP2" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="kor-YS-Yti"/>
+                <constraint firstItem="ydC-iR-t4i" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="rlN-bt-JLf"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImageView" destination="ydC-iR-t4i" id="VTP-1T-Yq3"/>
+                <outlet property="titleLabel" destination="VmA-OR-xP2" id="zJ0-sS-MgM"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
