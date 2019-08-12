@@ -11,7 +11,6 @@ import Kingfisher
 
 class CollectionHeaderView: UICollectionReusableView {
     
-    
     // MARK:- 控件属性
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -22,10 +21,18 @@ class CollectionHeaderView: UICollectionReusableView {
     var group: AnthorGroup?{
         didSet{
             titleLabel.text = group?.game_name
-            guard let iconURL = URL(string: group?.game_icon ?? "home_header_normal") else { return }
-            iconImageView.kf.setImage(with: iconURL)
-//            iconImageView.image = UIImage(named: group?.game_icon ?? "home_header_normal")
+            
+            let game_icon = group?.game_icon ?? "home_header_normal"
+            guard let iconURL = URL(string: game_icon) else { return }
+            iconImageView.kf.setImage(with: iconURL, placeholder: UIImage(named: game_icon))
         }
     }
     
+}
+
+// MARK:- 从xib中快速创建的类方法
+extension CollectionHeaderView {
+    class func collectionHeaderView()->CollectionHeaderView{
+        return Bundle.main.loadNibNamed("CollectionHeaderView", owner: nil, options: nil)?.first as! CollectionHeaderView
+    }
 }
