@@ -84,7 +84,14 @@ extension GameViewController{
 extension GameViewController{
     fileprivate func loadData() {
         gameVM.loadAllGameData {
+            // 展示全部游戏
             self.collectionView.reloadData()
+            // 展示常用游戏
+            if self.gameVM.games.count>=10 {
+                self.gameView.groups = Array(self.gameVM.games[0..<10])
+            }else {
+                self.gameView.groups = self.gameVM.games
+            }
         }
     }
 }
