@@ -16,10 +16,10 @@ class CollectionGameCell: UICollectionViewCell {
     @IBOutlet weak var iconImageView: UIImageView!
     
     // MARK:- 定义模型属性
-    var group: AnthorGroup?{
+    var baseGame: BaseGameModel?{
         didSet{
-            titleLabel.text = group?.game_name
-            guard let iconURL = URL(string: group?.game_icon ?? "home_header_normal") else { return }
+            titleLabel.text = baseGame?.game_name
+            guard let iconURL = URL(string: baseGame?.game_icon ?? "home_header_normal") else { return }
             iconImageView.kf.setImage(with: iconURL,placeholder: UIImage(named: "home_more_btn"))
         }
     }
