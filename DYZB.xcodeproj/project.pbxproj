@@ -31,6 +31,7 @@
 		AA057D9822E97FEA00E40F20 /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA057D9722E97FEA00E40F20 /* RecommendGameView.xib */; };
 		AA057D9B22E9A02800E40F20 /* CollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA057D9922E9A02800E40F20 /* CollectionGameCell.swift */; };
 		AA057D9E22E9B00300E40F20 /* CollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA057D9D22E9B00300E40F20 /* CollectionGameCell.xib */; };
+		AA0BC5B823012A6300381354 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0BC5B723012A6300381354 /* GameViewController.swift */; };
 		AA0EB39F22E19AA4005EF3D0 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */; };
 		AA0EB3A122E19E0D005EF3D0 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */; };
 		AA0EB3C722E5B513005EF3D0 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */; };
@@ -96,6 +97,7 @@
 		AA057D9722E97FEA00E40F20 /* RecommendGameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
 		AA057D9922E9A02800E40F20 /* CollectionGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionGameCell.swift; sourceTree = "<group>"; };
 		AA057D9D22E9B00300E40F20 /* CollectionGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionGameCell.xib; sourceTree = "<group>"; };
+		AA0BC5B723012A6300381354 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				AAA56EA422D8267E001D57AE /* Home.storyboard */,
 				AAA56EBA22D836D0001D57AE /* HomeViewController.swift */,
 				AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */,
+				AA0BC5B723012A6300381354 /* GameViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -624,6 +627,7 @@
 				AAB66F6222D72705008B67DD /* AppDelegate.swift in Sources */,
 				AA057CCC22E6988600E40F20 /* CollectionHeaderView.swift in Sources */,
 				AA0EB3A122E19E0D005EF3D0 /* UIColor-Extension.swift in Sources */,
+				AA0BC5B823012A6300381354 /* GameViewController.swift in Sources */,
 				AA0EB3C722E5B513005EF3D0 /* RecommendViewController.swift in Sources */,
 				AA33303B22D87D09009FC832 /* Common.swift in Sources */,
 				AA057D8422E7F8EE00E40F20 /* AnthorGroup.swift in Sources */,
