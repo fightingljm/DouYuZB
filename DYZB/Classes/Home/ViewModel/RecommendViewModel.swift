@@ -8,9 +8,8 @@
 
 import UIKit
 
-class RecommendViewModel {
+class RecommendViewModel: BaseViewModel {
     // MARK:- 懒加载属性
-    lazy var anchorGroups:[AnthorGroup] = [AnthorGroup]()
     lazy var cycleModels:[CycleModel] = [CycleModel]()
     private lazy var bigData:AnthorGroup = AnthorGroup()
     private lazy var prettyData:AnthorGroup = AnthorGroup()
@@ -72,17 +71,7 @@ extension RecommendViewModel{
         }
         // 3.请求游戏数据
         dGroup.enter()
-        NetworkTools.requestData(type: .GET, URLString: "http://open.douyucdn.cn/api/RoomApi/game", parameters: parameters) { (result) in
-            // 1.将result转成字典类型
-            guard let resultDic = result as? [String:NSObject] else { return }
-            // 2.根据data该key,获取数组
-            guard let dataArray = resultDic["data"] as? [[String:NSObject]] else { return }
-            // 3.遍历数组，获取字典，并且将字典转成模型对象
-            for dict in dataArray{
-                let group = AnthorGroup(dict: dict)
-                self.anchorGroups.append(group)
-            }
-            // 离开组
+        loadAnchorData(URLString: "http://open.douyucdn.cn/api/RoomApi/game", parameters: parameters) {
             dGroup.leave()
         }
         
