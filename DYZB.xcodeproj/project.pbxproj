@@ -39,6 +39,8 @@
 		AA0BC5C22301613800381354 /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0BC5C12301613800381354 /* AmuseViewModel.swift */; };
 		AA0BC5C523023FC800381354 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0BC5C423023FC800381354 /* BaseViewModel.swift */; };
 		AA0BC5C7230245A400381354 /* BaseAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0BC5C6230245A400381354 /* BaseAnchorViewController.swift */; };
+		AA0BC5C923025EB500381354 /* AmuseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0BC5C823025EB500381354 /* AmuseMenuView.swift */; };
+		AA0BC5CB23025ED300381354 /* AmuseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA0BC5CA23025ED300381354 /* AmuseMenuView.xib */; };
 		AA0EB39F22E19AA4005EF3D0 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */; };
 		AA0EB3A122E19E0D005EF3D0 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */; };
 		AA0EB3C722E5B513005EF3D0 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */; };
@@ -112,6 +114,8 @@
 		AA0BC5C12301613800381354 /* AmuseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
 		AA0BC5C423023FC800381354 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		AA0BC5C6230245A400381354 /* BaseAnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAnchorViewController.swift; sourceTree = "<group>"; };
+		AA0BC5C823025EB500381354 /* AmuseMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseMenuView.swift; sourceTree = "<group>"; };
+		AA0BC5CA23025ED300381354 /* AmuseMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmuseMenuView.xib; sourceTree = "<group>"; };
 		AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
@@ -254,6 +258,8 @@
 				AA057D9722E97FEA00E40F20 /* RecommendGameView.xib */,
 				AA057D9922E9A02800E40F20 /* CollectionGameCell.swift */,
 				AA057D9D22E9B00300E40F20 /* CollectionGameCell.xib */,
+				AA0BC5C823025EB500381354 /* AmuseMenuView.swift */,
+				AA0BC5CA23025ED300381354 /* AmuseMenuView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -529,6 +535,7 @@
 				AAA56EA922D826B6001D57AE /* Live.storyboard in Resources */,
 				AAA56EA622D8267E001D57AE /* Home.storyboard in Resources */,
 				AA057D9E22E9B00300E40F20 /* CollectionGameCell.xib in Resources */,
+				AA0BC5CB23025ED300381354 /* AmuseMenuView.xib in Resources */,
 				AA057D8C22E84BB800E40F20 /* RecommendCycleView.xib in Resources */,
 				AA057D9222E9450400E40F20 /* CollectionCycleCell.xib in Resources */,
 				AA057CD522E6B55800E40F20 /* CollectionPrettyCell.xib in Resources */,
@@ -677,6 +684,7 @@
 				AAA56EC022D855BB001D57AE /* UIBarButtonItem-Extension.swift in Sources */,
 				AA057CD422E6B55800E40F20 /* CollectionPrettyCell.swift in Sources */,
 				AA057D8822E8407000E40F20 /* CollectionBaseCell.swift in Sources */,
+				AA0BC5C923025EB500381354 /* AmuseMenuView.swift in Sources */,
 				AA057D8122E7E41800E40F20 /* NSDate-Extension.swift in Sources */,
 				AA057D9B22E9A02800E40F20 /* CollectionGameCell.swift in Sources */,
 				AA057CD022E6A87200E40F20 /* CollectionNormalCell.swift in Sources */,
