@@ -74,8 +74,8 @@ extension BaseAnchorViewController{
     }
 }
 
-// MARK:- 遵守UICollectionView的数据源&代理协议
-extension BaseAnchorViewController : UICollectionViewDataSource, UICollectionViewDelegate {
+// MARK:- 遵守UICollectionView的数据源
+extension BaseAnchorViewController : UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         
         return baseVM.anchorGroups.count
@@ -104,5 +104,26 @@ extension BaseAnchorViewController : UICollectionViewDataSource, UICollectionVie
         headerView.group = baseVM.anchorGroups[indexPath.section]
         
         return headerView
+    }
+}
+
+// MARK:- 遵守UICollectionView的代理协议
+extension BaseAnchorViewController : UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let anchor = baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
+        
+        anchor.isVertical == 1 ? pushNormalRoomVc() : presentShowRoomVc()
+    }
+    
+    private func presentShowRoomVc() {
+        let showRoomVc = RoomShowViewController()
+        
+        present(showRoomVc, animated: true, completion: nil)
+    }
+    
+    private func pushNormalRoomVc() {
+        let normalRoomVc = RoomNormalViewController()
+        
+        navigationController?.pushViewController(normalRoomVc, animated: true)
     }
 }
