@@ -78,18 +78,10 @@ extension BaseAnchorViewController{
 extension BaseAnchorViewController : UICollectionViewDataSource, UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         
-        if baseVM == nil {
-            return 20
-        }
-        
         return baseVM.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        if baseVM == nil {
-            return 40
-        }
         
         return baseVM.anchorGroups[section].anchors.count
     }
@@ -97,10 +89,6 @@ extension BaseAnchorViewController : UICollectionViewDataSource, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // 1.取出Cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! CollectionNormalCell
-        
-        if baseVM == nil {
-            return cell
-        }
         
         // 2.给Cell设置数据
         cell.anchor = baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
@@ -111,10 +99,6 @@ extension BaseAnchorViewController : UICollectionViewDataSource, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         // 1.取出HeaderView
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
-        
-        if baseVM == nil {
-            return headerView
-        }
         
         // 2.给HeaderView设置数据
         headerView.group = baseVM.anchorGroups[indexPath.section]
