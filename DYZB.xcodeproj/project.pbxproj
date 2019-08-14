@@ -47,6 +47,7 @@
 		AA1FD6992302B9CC00E97EB2 /* AmuseMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1FD6972302B9CC00E97EB2 /* AmuseMenuViewCell.swift */; };
 		AA1FD69A2302B9CC00E97EB2 /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1FD6982302B9CC00E97EB2 /* AmuseMenuViewCell.xib */; };
 		AA1FD6C02303B8A700E97EB2 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1FD6BF2303B8A700E97EB2 /* FunnyViewController.swift */; };
+		AA1FD6C22303D4E600E97EB2 /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1FD6C12303D4E600E97EB2 /* FunnyViewModel.swift */; };
 		AA33303922D8786B009FC832 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33303822D8786B009FC832 /* PageTitleView.swift */; };
 		AA33303B22D87D09009FC832 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33303A22D87D09009FC832 /* Common.swift */; };
 		AAA56EA622D8267E001D57AE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA56EA422D8267E001D57AE /* Home.storyboard */; };
@@ -125,6 +126,7 @@
 		AA1FD6972302B9CC00E97EB2 /* AmuseMenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseMenuViewCell.swift; sourceTree = "<group>"; };
 		AA1FD6982302B9CC00E97EB2 /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
 		AA1FD6BF2303B8A700E97EB2 /* FunnyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
+		AA1FD6C12303D4E600E97EB2 /* FunnyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
 		AA33303822D8786B009FC832 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		AA33303A22D87D09009FC832 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		AAA56EA522D8267E001D57AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Classes/Main/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				AA057D7E22E7E0BA00E40F20 /* RecommendViewModel.swift */,
 				AA0BC5B9230131C300381354 /* GameViewModel.swift */,
 				AA0BC5C12301613800381354 /* AmuseViewModel.swift */,
+				AA1FD6C12303D4E600E97EB2 /* FunnyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -686,6 +689,7 @@
 				AA0BC5C523023FC800381354 /* BaseViewModel.swift in Sources */,
 				AA057D9122E9450400E40F20 /* CollectionCycleCell.swift in Sources */,
 				AA0BC5BC2301341600381354 /* GameModel.swift in Sources */,
+				AA1FD6C22303D4E600E97EB2 /* FunnyViewModel.swift in Sources */,
 				AA0BC5BE2301366000381354 /* BaseGameModel.swift in Sources */,
 				AA057D8E22E93A0700E40F20 /* CycleModel.swift in Sources */,
 				AA0BC5C023015CE300381354 /* AmuseViewController.swift in Sources */,

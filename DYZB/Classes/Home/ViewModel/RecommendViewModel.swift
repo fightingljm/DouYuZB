@@ -71,7 +71,7 @@ extension RecommendViewModel{
         }
         // 3.请求游戏数据
         dGroup.enter()
-        loadAnchorData(URLString: "http://open.douyucdn.cn/api/RoomApi/game", parameters: parameters) {
+        loadAnchorData(isGroupData: true,URLString: "http://open.douyucdn.cn/api/RoomApi/game", parameters: parameters) {
             dGroup.leave()
         }
         
