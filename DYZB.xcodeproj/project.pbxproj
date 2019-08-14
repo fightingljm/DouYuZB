@@ -44,6 +44,8 @@
 		AA0EB39F22E19AA4005EF3D0 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */; };
 		AA0EB3A122E19E0D005EF3D0 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */; };
 		AA0EB3C722E5B513005EF3D0 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */; };
+		AA1FD6992302B9CC00E97EB2 /* AmuseMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1FD6972302B9CC00E97EB2 /* AmuseMenuViewCell.swift */; };
+		AA1FD69A2302B9CC00E97EB2 /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1FD6982302B9CC00E97EB2 /* AmuseMenuViewCell.xib */; };
 		AA33303922D8786B009FC832 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33303822D8786B009FC832 /* PageTitleView.swift */; };
 		AA33303B22D87D09009FC832 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA33303A22D87D09009FC832 /* Common.swift */; };
 		AAA56EA622D8267E001D57AE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA56EA422D8267E001D57AE /* Home.storyboard */; };
@@ -119,6 +121,8 @@
 		AA0EB39E22E19AA4005EF3D0 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		AA0EB3A022E19E0D005EF3D0 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		AA0EB3C622E5B513005EF3D0 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		AA1FD6972302B9CC00E97EB2 /* AmuseMenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseMenuViewCell.swift; sourceTree = "<group>"; };
+		AA1FD6982302B9CC00E97EB2 /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
 		AA33303822D8786B009FC832 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		AA33303A22D87D09009FC832 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		AAA56EA522D8267E001D57AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Classes/Main/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -260,6 +264,8 @@
 				AA057D9D22E9B00300E40F20 /* CollectionGameCell.xib */,
 				AA0BC5C823025EB500381354 /* AmuseMenuView.swift */,
 				AA0BC5CA23025ED300381354 /* AmuseMenuView.xib */,
+				AA1FD6972302B9CC00E97EB2 /* AmuseMenuViewCell.swift */,
+				AA1FD6982302B9CC00E97EB2 /* AmuseMenuViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -528,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAB66F6C22D72706008B67DD /* LaunchScreen.storyboard in Resources */,
+				AA1FD69A2302B9CC00E97EB2 /* AmuseMenuViewCell.xib in Resources */,
 				AA057CCD22E6988600E40F20 /* CollectionHeaderView.xib in Resources */,
 				AA057CD122E6A87200E40F20 /* CollectionNormalCell.xib in Resources */,
 				AAB66F6922D72706008B67DD /* Assets.xcassets in Resources */,
@@ -669,6 +676,7 @@
 				AA0BC5B823012A6300381354 /* GameViewController.swift in Sources */,
 				AA0EB3C722E5B513005EF3D0 /* RecommendViewController.swift in Sources */,
 				AA33303B22D87D09009FC832 /* Common.swift in Sources */,
+				AA1FD6992302B9CC00E97EB2 /* AmuseMenuViewCell.swift in Sources */,
 				AA057D8422E7F8EE00E40F20 /* AnthorGroup.swift in Sources */,
 				AAA56EB322D830D7001D57AE /* MainViewController.swift in Sources */,
 				AA0BC5C523023FC800381354 /* BaseViewModel.swift in Sources */,
