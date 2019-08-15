@@ -21,10 +21,6 @@ class RoomNormalViewController: UIViewController, UIGestureRecognizerDelegate {
         
         // 隐藏导航栏
         navigationController?.setNavigationBarHidden(true, animated: true)
-        
-        // 依然保持手势
-        navigationController?.interactivePopGestureRecognizer?.delegate = self
-        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
     
     
